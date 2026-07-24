@@ -1,8 +1,24 @@
 aid: careem
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/careem.png
 name: Careem
-description: 'Careem is a company surfaced as a portfolio company of dcm-ventures and added to the API
-  Evangelist network as a stub for enrichment. Sector: consumer. This profile is a lead awaiting the enrichment
-  pipeline.'
+description: 'Careem is the everything app for the greater Middle East, a super-app operating across the
+  MENAP region (Middle East, North Africa, and Pakistan) and headquartered in Dubai, United Arab Emirates.
+  Founded in 2012 and now owned by Uber, Careem combines mobility (rides, taxi, bike, car rental), food and
+  grocery delivery (Careem Eat, Quik), courier and B2B logistics (Box, Express), and financial services
+  (Careem Pay, remittance, donations) alongside the Careem Plus subscription. Careem does not currently
+  operate a public developer API program or partner API portal; this profile captures its public identity,
+  engineering surface, and domain-security posture within the API Evangelist network.'
 url: https://raw.githubusercontent.com/api-evangelist/careem/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +28,17 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
 - Consumer
+- Mobility
+- Ride Hailing
+- Delivery
+- Payments
+- Super App
+- Fintech
+- Middle East
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +46,28 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/careem-domain-security.yml
 - type: Website
   url: https://www.careem.com/
+- type: Blog
+  url: https://blog.careem.com/
+- type: GitHubOrganization
+  url: https://github.com/careem
+- type: Support
+  url: https://help.careem.com/
+- type: TermsOfService
+  url: https://www.careem.com/en-AE/terms-of-service/
+- type: PrivacyPolicy
+  url: https://www.careem.com/en-AE/privacy-policy/
+- type: About
+  url: https://www.careem.com/en-AE/about-us/
+- type: Careers
+  url: https://www.careem.com/en-AE/careers/
+- type: EngineeringBlog
+  url: https://engineering.careem.com/
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
